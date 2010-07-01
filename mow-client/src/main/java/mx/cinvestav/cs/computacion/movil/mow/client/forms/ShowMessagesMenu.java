@@ -17,7 +17,6 @@ public class ShowMessagesMenu
 
     private final CommandListener commandListener;
     private Command selectButton;
-    private Display display = MowClient.display;
 
     private Object[][] options = {
 	{"New message", null},
@@ -46,6 +45,8 @@ public class ShowMessagesMenu
 	    switch(getSelectedIndex()) {
 	    case 0:	// New Message
 		// TODO: Go to new message
+		EditMessage screen = new EditMessage(this,this);
+		MowClient.display.setCurrent(screen);
 		break;
 	    case 1:	// Inbox
 		// TODO: Go to inbox
