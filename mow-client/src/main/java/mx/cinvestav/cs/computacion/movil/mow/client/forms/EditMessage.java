@@ -39,7 +39,9 @@ public class EditMessage
 	if(c == backButton) {
 	    MowClient.display.setCurrent(previousScreen);
 	} else if(c == sendToButton) {
-	    // TODO: Go to contacts list
+	    // TODO: Load contact list to show
+	    ShowContactsList screen = new ShowContactsList(this,this);
+	    MowClient.display.setCurrent(screen);
 	}
 	
 	commandListener.commandAction(c, d);
