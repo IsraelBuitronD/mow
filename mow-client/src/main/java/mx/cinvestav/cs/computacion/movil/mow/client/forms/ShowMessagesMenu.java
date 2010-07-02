@@ -23,7 +23,8 @@ public class ShowMessagesMenu
 	{"Inbox", null},
 	{"Draft", null},
 	{"Sent", null},
-	{"Outbox", null}
+	{"Outbox", null},
+	{"Options", null}
     };
 
     public ShowMessagesMenu(CommandListener cl) {
@@ -44,9 +45,8 @@ public class ShowMessagesMenu
 	if(c == selectButton) {
 	    switch(getSelectedIndex()) {
 	    case 0:	// New Message
-		// TODO: Go to new message
-		EditMessage screen = new EditMessage(this,this);
-		MowClient.display.setCurrent(screen);
+		EditMessage message = new EditMessage(this,this);
+		MowClient.display.setCurrent(message);
 		break;
 	    case 1:	// Inbox
 		// TODO: Go to inbox
@@ -59,6 +59,10 @@ public class ShowMessagesMenu
 		break;
 	    case 4:	// Outbox
 		// TODO: Go to outbox
+		break;
+	    case 5:	// Options
+		ShowOptions options = new ShowOptions(this,this);
+		MowClient.display.setCurrent(options);
 		break;
 	    }
 	}
