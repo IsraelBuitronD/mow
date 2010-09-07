@@ -1,0 +1,36 @@
+Description
+===========
+
+MOW is a messaging service over Wifi networks.
+
+MOW has a client-server arquitecture, so it has two
+modules. mow-client and mow-server.
+
+
+Get the project
+===============
+
+MOW is mounted into a Git repository, you can get a clone
+with this url:
+
+     git://github.com/neoriddle/mow.git
+
+
+ToDo List and Pendings
+======================
+
+- Release a stable version.
+
+If you detect some error or have SUGGESTIONS or COMMENTS, please BE
+FREE TO CONTACT ME to notify me or if you was to make contributions
+too.
+
+
+Contact Info
+============
+
+Name	Israel Buitron
+Email	israel.buitron@gmail.com
+	ibuitron@computacion.cs.cinvestav.mx
+Webpage	http://github.com/neoriddle/mow
+	http://computacion.cs.cinvestav.mx/~ibuitron
